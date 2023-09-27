@@ -3,7 +3,7 @@
 A dead simple tool to embed a file to Go.
 
 ```
-Usage of fileTobyteslice:
+Usage of filetobyteslice:
   -buildtags string
         build tags
   -compress
