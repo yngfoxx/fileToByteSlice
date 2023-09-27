@@ -1,4 +1,3 @@
-// fileToByteSlice is a dead simple tool to embed a file to Go.
 package main
 
 import (
@@ -6,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/yngfoxx/fileToByteSlice"
+	"github.com/yngfoxx/filetobyteslice/writer"
 )
 
 var (
@@ -43,7 +42,7 @@ func run() error {
 		in = os.Stdin
 	}
 
-	if err := fileToByteSlice.Write(out, in, *compress, *buildTags, *packageName, *varName); err != nil {
+	if err := writer.Write(out, in, *compress, *buildTags, *packageName, *varName); err != nil {
 		return err
 	}
 

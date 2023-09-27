@@ -1,4 +1,4 @@
-package fileToByteSlice
+package writer
 
 import (
 	"bytes"
